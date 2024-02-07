@@ -1,0 +1,8 @@
+Изображения:
+    check_mark.png
+    delete_black_thin.png
+    pencil_black.png
+ взяты с сайта https://www.pngwing.com/
+
+ Изображене loading.png взято с https://loading.io/
+ 

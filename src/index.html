@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HelpDesk</title>
+</head>
+<body>
+    <div class="container">
+        <button type="button" class="add_ticket">Добавить тикет</button>
+        <div class="ticket_list"></div>
+        <form name="ticket" class="create_ticket hiden">
+            <h3 class="create_ticket_title"></h3>
+            <span class="description-title">Краткое описание</span>
+            <textarea class="enter-text short-description" name="name"></textarea>
+            <span class="description-title">Подробное описание</span>
+            <textarea class="enter-text detailed-description" name="description"></textarea>
+            <div class="create_btns-box">
+                <button type="reset" class="create-btn create_btn-cansel">Отмена</button>
+                <button type="submit" class="create-btn create_btn-add">Оk</button>
+            </div>
+        </form>
+        <div class="confirm_box hiden">
+            <h3 class="confirm_title">Удалить тикет</h3>
+            <span class="confirm_text">
+                Вы уверены что хотите удалить тикет?
+            </span>
+            <div class="confirm_btn-box">
+                <button class="confirm_btn confirm_btn-cansel">Отмена</button>
+                <button class="confirm_btn confirm_btn-ok">Оk</button>
+            </div>
+        </div>
+        <div class="curtain hiden"></div>
+        <div class="error-message_box hiden">
+            <h3 class="error-message_title">Произошла ошибка</h3>
+            <span class="error-message_text"></span>
+            <button type="button" class="error-message_ok">Ok</button>
+        </div>
+    </div>
+    <div class="loading hiden">
+        <img src="./img/loading.png" alt="Идет загрузка">
+    </div>    
+</body>
+</html>

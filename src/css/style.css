@@ -1,0 +1,333 @@
+html, body {
+    width: 100%;
+}
+
+.container {
+    width: 500px;
+    max-width: 500px;
+
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+}
+
+.add_ticket {
+    height: 30px;
+
+    background-color: inherit;
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    align-self: flex-end;
+
+    margin-bottom: 10px;
+}
+
+.ticket_box {
+    box-sizing: border-box;
+    min-height: 25px;
+
+    border: 1px solid black;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    display: flex;
+    align-items: flex-start;
+}
+
+.ticket_status-box {
+    box-sizing: border-box;
+    width: 10%;
+    min-height: inherit;
+
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+}
+
+.status-toggle {
+    width: 0;
+    height: 0;
+    
+    position: absolute;
+}
+
+.check-view {
+    width: 25px;
+    height: 25px;
+    box-sizing: border-box;
+
+    border: 1px solid black;
+    border-radius: 50%;
+
+    background-color: inherit;
+    background-size: cover;
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+
+    align-self: center;
+}
+
+.status_ready {
+    background-image: url('../img/check_mark.png');
+}
+
+.ticket_text-box {
+    box-sizing: border-box;
+    width: 40%;
+    min-height: inherit;
+}
+
+.ticket-text {
+    display: block;
+}
+
+.ticket_title {
+    min-height: inherit;
+    padding-top: 3px;
+}
+
+.ticket_date-box {
+    box-sizing: border-box;
+    width: 30%;
+    min-height: inherit;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ticket_date {
+    display: block;
+}
+
+.ticket_btns-box {
+    box-sizing: border-box;
+    width: 20%;
+    min-height: inherit;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.ticket-btn {
+    width: 25px;
+    height: 25px;
+    box-sizing: border-box;
+
+    border: 1px solid black;
+    border-radius: 50%;
+
+    background-color: inherit;
+    background-size: cover;
+    background-position: center;
+    background-size: 70%;
+    background-repeat: no-repeat;
+
+    align-self: center;
+}
+
+.edit_btn {
+    background-image: url('../img/pencil_black.png');
+}
+
+.del_btn {
+    background-image: url('../img/delete_black_thin.png');
+}
+
+.create_ticket {
+    width: 300px;
+    background-color: white;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    z-index: 999;
+
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.create_ticket_title {
+    margin-top: 10px;
+    align-self: center;
+}
+
+.description-title {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.enter-text {
+    box-sizing: border-box;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+
+    height: fit-content;
+
+    border-radius: 10px;
+
+    padding: 10px;
+}
+
+.short-description {
+    height: 40px;
+    min-height: 40px;
+}
+
+.create_btns-box {
+    margin-top: 10px;
+
+    align-self: flex-end;
+}
+
+.create-btn {
+    background-color: inherit;
+
+    height: 25px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.confirm_box {
+    width: 300px;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    padding: 10px;
+
+    background-color: white;
+
+    position: absolute;
+    top: 70px;
+    left: 100px;
+    z-index: 9999;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.confirm_title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.confirm_btn-box {
+    align-self: flex-end;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.confirm_btn {
+    background-color: inherit;
+
+    height: 25px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    margin-left: 10px;
+}
+
+.curtain {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: 99;
+
+    background-color: gray;
+    opacity: 0.2;
+}
+
+.error-message_box {
+    box-sizing: border-box;
+    width: 200px;
+    max-width: 200px;
+
+    padding: 10px;
+
+    position: absolute;
+    top: 50px;
+    left: 150px;
+    z-index: 9999999;
+
+    background-color: white;
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.error-message_text {
+    display: block;
+}
+
+.error-message_ok {
+    background-color: green;
+
+    color: white;
+
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.tooltip {
+    max-width: 200px;
+
+    padding: 2px;
+
+    border: 1px solid yellow;
+    border-radius: 5px;
+
+    position: absolute;
+    z-index: 99999;
+    background-color: yellow;
+}
+
+.tooltip::before, .toolTip::after {
+    content: ''; 
+    position: absolute;
+    left: 15px;
+    top: -20px;
+
+    border: 10px solid transparent;
+    border-bottom: 10px solid yellow;
+}
+
+.tooltip::after {
+    border-bottom: 10px solid yellow;
+
+    top: -19px; 
+}
+
+.loading {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: 9999999999999;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hiden {
+    display: none;
+}
